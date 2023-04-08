@@ -1,0 +1,426 @@
+%%
+%% This is file `sample-manuscript.tex',
+%% generated with the docstrip utility.
+%%
+%% The original source files were:
+%%
+%% samples.dtx  (with options: `manuscript')
+%% 
+%% IMPORTANT NOTICE:
+%% 
+%% For the copyright see the source file.
+%% 
+%% Any modified versions of this file must be renamed
+%% with new filenames distinct from sample-manuscript.tex.
+%% 
+%% For distribution of the original source see the terms
+%% for copying and modification in the file samples.dtx.
+%% 
+%% This generated file may be distributed as long as the
+%% original source files, as listed above, are part of the
+%% same distribution. (The sources need not necessarily be
+%% in the same archive or directory.)
+%%
+%%
+%% Commands for TeXCount
+%TC:macro \cite [option:text,text]
+%TC:macro \citep [option:text,text]
+%TC:macro \citet [option:text,text]
+%TC:envir table 0 1
+%TC:envir table* 0 1
+%TC:envir tabular [ignore] word
+%TC:envir displaymath 0 word
+%TC:envir math 0 word
+%TC:envir comment 0 0
+%%
+%%
+%% The first command in your LaTeX source must be the \documentclass
+%% command.
+%%
+%% For submission and review of your manuscript please change the
+%% command to \documentclass[manuscript, screen, review]{acmart}.
+%%
+%% When submitting camera ready or to TAPS, please change the command
+%% to \documentclass[sigconf]{acmart} or whichever template is required
+%% for your publication.
+%%
+%%
+\documentclass[manuscript,screen,review]{acmart}
+
+%%
+%% \BibTeX command to typeset BibTeX logo in the docs
+\AtBeginDocument{%
+  \providecommand\BibTeX{{%
+    Bib\TeX}}}
+
+%% Rights management information.  This information is sent to you
+%% when you complete the rights form.  These commands have SAMPLE
+%% values in them; it is your responsibility as an author to replace
+%% the commands and values with those provided to you when you
+%% complete the rights form.
+\setcopyright{acmcopyright}
+\copyrightyear{2023}
+\acmYear{2023}
+
+
+%% These commands are for a PROCEEDINGS abstract or paper.
+
+%%
+%%  Uncomment \acmBooktitle if the title of the proceedings is different
+%%  from ``Proceedings of ...''!
+%%
+%%\acmBooktitle{Woodstock '18: ACM Symposium on Neural Gaze Detection,
+%%  June 03--05, 2018, Woodstock, NY}
+
+
+
+%%
+%% Submission ID.
+%% Use this when submitting an article to a sponsored event. You'll
+%% receive a unique submission ID from the organizers
+%% of the event, and this ID should be used as the parameter to this command.
+%%\acmSubmissionID{123-A56-BU3}
+
+%%
+%% For managing citations, it is recommended to use bibliography
+%% files in BibTeX format.
+%%
+%% You can then either use BibTeX with the ACM-Reference-Format style,
+%% or BibLaTeX with the acmnumeric or acmauthoryear sytles, that include
+%% support for advanced citation of software artefact from the
+%% biblatex-software package, also separately available on CTAN.
+%%
+%% Look at the sample-*-biblatex.tex files for templates showcasing
+%% the biblatex styles.
+%%
+
+%%
+%% The majority of ACM publications use numbered citations and
+%% references.  The command \citestyle{authoryear} switches to the
+%% "author year" style.
+%%
+%% If you are preparing content for an event
+%% sponsored by ACM SIGGRAPH, you must use the "author year" style of
+%% citations and references.
+%% Uncommenting
+%% the next command will enable that style.
+%%\citestyle{acmauthoryear}
+
+
+%%
+%% end of the preamble, start of the body of the document source.
+\begin{document}
+
+%%
+%% The "title" command has an optional parameter,
+%% allowing the author to define a "short title" to be used in page headers.
+\title{Angry Birds Level Generation with Evolutionary Algorithms}
+
+%%
+%% The "author" command and its associated commands are used to define
+%% the authors and their affiliations.
+%% Of note is the shared affiliation of the first two authors, and the
+%% "authornote" and "authornotemark" commands
+%% used to denote shared contribution to the research.
+\author{Ben Trovato}
+\authornote{Both authors contributed equally to this research.}
+\email{trovato@corporation.com}
+\orcid{1234-5678-9012}
+
+\author{G.K.M. Tobin}
+\authornotemark[1]
+\email{webmaster@marysville-ohio.com}
+\affiliation{%
+  \institution{Institute for Clarity in Documentation}
+  \streetaddress{P.O. Box 1212}
+  \city{Dublin}
+  \state{Ohio}
+  \country{USA}
+  \postcode{43017-6221}
+}
+
+\author{Lars Th{\o}rv{\"a}ld}
+\affiliation{%
+  \institution{The Th{\o}rv{\"a}ld Group}
+  \streetaddress{1 Th{\o}rv{\"a}ld Circle}
+  \city{Hekla}
+  \country{Iceland}}
+\email{larst@affiliation.org}
+
+\author{Valerie B\'eranger}
+\affiliation{%
+  \institution{Inria Paris-Rocquencourt}
+  \city{Rocquencourt}
+  \country{France}
+}
+
+
+%%
+%% By default, the full list of authors will be used in the page
+%% headers. Often, this list is too long, and will overlap
+%% other information printed in the page headers. This command allows
+%% the author to define a more concise list
+%% of authors' names for this purpose.
+\renewcommand{\shortauthors}{Trovato et al.}
+
+%%
+%% The abstract is a short summary of the work to be presented in the
+%% article.
+\begin{abstract}
+  A clear and well-documented \LaTeX\ document is presented as an
+  article formatted for publication by ACM in a conference proceedings
+  or journal publication. Based on the ``acmart'' document class, this
+  article presents and explains many of the common variations, as well
+  as many of the formatting elements an author may use in the
+  preparation of the documentation of their work.
+\end{abstract}
+
+%%
+%% The code below is generated by the tool at http://dl.acm.org/ccs.cfm.
+%% Please copy and paste the code instead of the example below.
+%%
+\begin{CCSXML}
+<ccs2012>
+ <concept>
+  <concept_id>10010520.10010553.10010562</concept_id>
+  <concept_desc>Computer systems organization~Embedded systems</concept_desc>
+  <concept_significance>500</concept_significance>
+ </concept>
+ <concept>
+  <concept_id>10010520.10010575.10010755</concept_id>
+  <concept_desc>Computer systems organization~Redundancy</concept_desc>
+  <concept_significance>300</concept_significance>
+ </concept>
+ <concept>
+  <concept_id>10010520.10010553.10010554</concept_id>
+  <concept_desc>Computer systems organization~Robotics</concept_desc>
+  <concept_significance>100</concept_significance>
+ </concept>
+ <concept>
+  <concept_id>10003033.10003083.10003095</concept_id>
+  <concept_desc>Networks~Network reliability</concept_desc>
+  <concept_significance>100</concept_significance>
+ </concept>
+</ccs2012>
+\end{CCSXML}
+
+\ccsdesc[500]{Computer systems organization~Embedded systems}
+\ccsdesc[300]{Computer systems organization~Redundancy}
+\ccsdesc{Computer systems organization~Robotics}
+\ccsdesc[100]{Networks~Network reliability}
+
+%%
+%% Keywords. The author(s) should pick words that accurately describe
+%% the work being presented. Separate the keywords with commas.
+\keywords{datasets, neural networks, gaze detection, text tagging}
+
+\received{20 February 2007}
+\received[revised]{12 March 2009}
+\received[accepted]{5 June 2009}
+
+%%
+%% This command processes the author and affiliation and title
+%% information and builds the first part of the formatted document.
+\maketitle
+
+\section{Abstract}
+aaa
+
+\section{Problem Description}
+Designing game levels can be a time-consuming and challenging task, especially for small groups of developers who may not have the necessary domain-specific knowledge and experience. To address this problem, our project will focus on developing an automatic level-generation method for the game Angry Birds.
+
+In Angry Birds, the player needs to launch birds of different types using a slingshot to destroy hostile pigs and the structures they are hiding in. Different birds have different abilities, and the player must use their skills strategically to complete each level. Creating a single level in this game involves placing objects of different sizes and shapes including platforms, TNT, pigs, and regular blocks in reasonable positions. The game's gravity mechanism adds an extra layer of difficulty when generating levels.
+
+Evolutionary algorithms are well-suited to address this problem for the capability of finding multiple sub-optimal solutions in a single run, rather than a single optimal solution. The use of evolutionary algorithms in PCGML involves generating a population of candidate solutions and then using selection, mutation, and recombination operators to evolve these solutions over multiple generations. This approach enables the algorithm to explore a wide range of possible solutions and identify diverse and interesting levels. Moreover, evolutionary algorithms can also be customized to incorporate specific constraints or objectives, such as balancing the difficulty level or incorporating specific game mechanics. This ensures that the generated levels are not only diverse but also consistent with the game's overall design and objectives.
+
+\section{Literature Review}
+
+The literature we reviewed is "Level Generation for Angry Birds with Sequential VAE and Latent Variable Evolution"[].
+
+In the literature, the authors proposed a method to generate angry birds levels by deep learning models and latent variable evolution. They identified two difficulties in the generation: one is that the objects in the levels have a lot of properties so a lot of freedom, resulting a very large search space. Second, the game has a physical system, which considers gravity. Due to gravity, unstable structures can collapse, which is not supposed to happen in a valid game level.
+
+\subsection{Variational Autoencoder}
+
+To handle the challenges mentioned above, the authors came up with a embedding method and a variational auto-encoder (VAE). First, each layer of the structure in each level is seen as a "word". By reading the structure bottom up, each game level can be treated as a "sentence". 
+
+Second, they trained a word-embedding layer as the first component of the variational auto-encoder. In short, they set up a word-embedding layer and connect a prediction layer after that. Then, masked a "word" and provided the neighboring "words" to the 2 layers and trained them to predict the masked word. If the 2 layers achieved high accuracy on the task, the word-embedding layer gives a high quality dimensional reduction method.
+
+Third, they use a sequential VAE to generate levels. A VAE is composed of two parts, encoder and decoder. In encoder, they first use a bidirectional long short-term memory network (Bi-LSTM) to sequentially read the embedded "words", which is each layer of the building structure in each level, in both forward and backward direction. After that, concatenate the forward and backward, long and short term memories of the Bi-LSTM and send it to 2 linear layers and estimate a mean $\mu$ and a log-variance $\ln(\sigma^2)$. Then, generate a latent vector by the normal distribution $\mathcal{N}(\mu,\sigma^2)$ and send that to the decoder.
+
+For the decoder, it almost reverse the process in the encoder, but with some difference. After taking the latent vector, it uses 2 linear layer to reconstruct the long and short memory for the LSTM comimg up next. Instead of using a Bi-LSTM, the decoder only uses a one-directional LSTM, since we do not know the next input in decoding. Collect the list of vector that LSTM generated and send it to a linear layer with softmax activation to map them back to the "words".
+
+Finally, they construct game levels from the "words" by placing them bottom-up.
+
+\subsection{Latent Variable Evolution}
+
+The literature also says that they implemented latent variable evolution. However, the exact method is not presented or discussed. Instead, they suggested some candidate fitness measures and results of some experiments. The fitness measures can be classified into 2 categories: with or without simulation.
+
+For the fitness without simulation, the authors suggested to set the fitness to number of pigs and TNTs and maximize that. For the fitness with simulation, they first introduce AI agents to play the game and set a fitness measure based on the number of birds remaining.
+
+\section{EA Design}
+
+To alleviate the 2 difficulties in Angry Birds level generation, we adopt the VAE that is built and trained by the procedure mentioned in the literature we reviewed.
+
+\subsection{Genotype representation and fitness calculation}
+
+From previous, we can map each 60-dimension latent vector to a game level by using the decoder in the trained VAE, we would like to include that in our genotype. In addition, the vectors that are close to each other in the latent space will map to similar game levels. Therefore, we would like to find the variances that can span the similar vectors.
+
+Therefore, our genotype is a tuple of two vectors: $(\vec{\mu}, \vec{\sigma})$, where $\vec{\mu}, \vec{\sigma}\in\mathbb{R}^{60\times 1}$. For each genotype, we can generate vectors by the normal distribution $\mathcal{N}(\vec{\mu},\mathrm{diag}(\vec{\sigma}))$.
+
+When we calculate the fitness of each individual, we only use $\vec{\mu}$. We first map $\vec{\mu}$ to a game level by the decoder. Then, we measure the following 5 quantities: number of pigs, number of TNTs, number of different materials of objects, number of different types and number of objects.
+
+\indent\indent The materials of objects include ice, wood, stone and "basic small", which contains pigs and TNTs. There are 21 object types, which only considers the size, shape and orientations of objects.
+
+Essentially, quality of levels is measured by players, which is very subjective. Users can adopt our designed fitness function, our use a customized fitness function based on preference, to generate levels for playing.
+
+\textbf{In the experiments, we set our fitness to be number of objects} to find good hyper-parameters for our algorithm. Comparing to other metrics, we choose the number of objects since it is quite intuitive and we have some idea about what should levels with large number of objects look like. Also, we found that the maximum number of objects is above 140, which means this metric has more than 140 possible values and can be a good indicator of whether our EA is effective or not. 
+
+\subsection{Algorithm description}
+
+Figure ? is a diagram explaining the process of one iteration. We first initialize the population, with size POP\_SIZE. Then, we hold a tournament selection. In total, we have WINNER\_SIZE rounds and in each round, the size is TOURNAMENT\_SIZE. The winner each round will not be selected to be contestants in later tournaments.
+
+The set of parents is constructed by two parts, all winners and uniformly selected losers in the tournament. The total number of parents is pre-defined to a hyper-parameter MATING\_POOL\_SIZE, which has to be greater than WINNER\_SIZE.
+
+Then we perform variational operators and obtain offspring from the selected parents. The operators we use is very similar to those in evolutionary strategies. 
+
+\indent\indent We first perform crossover. Global crossover is used, which means for each allele of each offspring, it comes from 2 randomly chosen parents. For each entry in $\vec{\mu}$, we adopt from one of its parents. For each entry in $\vec{\sigma}$, we use linear interpolation, with the factor sampled from a uniform distribution.
+
+\indent\indent For mutation, we adopt method used uncorrelated $n$-step sizes self-adaptive ES. At each iteration, we first update the step sizes: $\vec{\sigma}'\leftarrow\vec{\sigma}\cdot\exp[\tau\cdot \mathcal{N}(\vec{0},\vec{1})]$, where $\tau$ is later referred as learning rate. Then we update the latent vectors: $\vec{\mu}'\leftarrow\vec{\mu}+\mathrm{diag}(\vec\sigma')\mathcal{N(\vec{0},\vec{1})}$.
+
+The population for the next iteration is also composed of two parts. The first part is the mutated winners in the tournament. The second part comes from uniform selection of the off-springs.
+
+\subsection{Motivation for EA design}
+
+The \textbf{fitness calculation is expensive}. To determine the fitness of each individual, we need to run our decoder, which takes significant computational resources. Therefore, our EA should avoid calculating the fitness of the population. Realizing that, we only hold a tournament selection once and uniform selection twice per iteration.
+
+\textbf{Diversity are more preferred than global optimality} in our problem, since we want to find as much diverse levels as possible. Thus, we want to have a large population for diversity and low selection pressure in our EA.
+
+\subsection{Relating to steady-state GP}
+
+Similar to the steady-state GP, we hold a tournament selection and use the winners for both parents and next generation. In tree-based GP, we have the similar issue of requiring diversity, but having expensive fitness calculation. Thus, the use of tournament selection in our EA makes sense.
+
+However, since we our step-sizes $\vec{\sigma}$ do not contribute directly in fitness, we need to pressure them. Therefore, different from steady-state GP, we mutate the winners before putting them into the next generation.
+
+\subsection{Relating to over-selection}
+
+The parent selection in our algorithm is similar to an over-selection. In over-selection, we rank the fitness of all individuals and have 80\% parent chosen from the top $x$\%, 20\% parent chosen from the remaining. Over-selection is used for large populations.
+
+In our approach, although we do not calculate the fitness of all individuals, the hold a tournament selection instead. The winners can be an approximation of top $x$\% fit individuals. Instead of choosing 80\% parents, we use all winners to better utilize the computed fitness.
+
+\section{Alternative method: encoding and clustering}
+
+\subsection{Algorithm Description}
+We first encode all the levels in the training set into latent vectors. Then, we find the Silhouette value to choose the number of clusters. After that we perform K-means clustering and find the centroids, as well as the diameter of each centroid.
+
+For each cluster, we can obtain a genotype $(\vec{\mu}_i,\vec{\sigma}_i)$ by the following:
+
+\indent\indent $\vec{\mu}_i=\vec{c}_i$, $\vec{\sigma}_i=(d_i/2)\cdot\vec{1}$
+
+\indent\indent where $\vec{c}_i$ is the centroid of the $i$-th cluster and $d_i$ is the diameter of the $i$-th cluster.
+
+We divide the diameter by $2$ since under a normal distribution $\mathcal{N}(\mu,d/2)$, the probability of generating a number within $[\mu-d,\mu+d]$ is approximately $0.95$. Thus, if we set our genotype in the way we previously mentioned, the probability of each generated instance to stay in the cluster is approximately $0.95$.
+
+\subsection{Comparing to EA}
+The advantage of this algorithm is that it is simpler and faster to compute. Since clustering is used, it is not likely to generate levels that are too similar, so this algorithm also gives us diverse levels.
+
+However, noticed that this algorithm is not fitness based. On expectation, it generates levels that are similar to the ones in the training dataset and cannot adapt to maximize a user selected metric.
+
+\section{Experimental Design}
+
+\subsection{Parameter tuning}
+It is true that we use a self-adaptive mutation rate, which means that we use parameter control technique. However, we still have several other hyper-parameters to tune.
+
+Since we do not have an objective fitness for game levels, we set our fitness to be the number of objects in a level and perform parameter tuning. After finding a good set of hyper-parameters, we also run several other choices of fitness and manually assess the quality of the game levels, from our perspective. Later, we also suggest some designed fitness functions as candidates.
+
+\subsection{Experiment for alternative method}
+Our alternative method does not require much hyper-parameter tuning. The number of clusters are selected previously by the Silhouette value. Therefore, for each centroid, we generate 5 levels from it and measure the pig count, TNT count, object number, object types, material types and the ratio of stable levels.
+
+\section{EA Results}
+
+\subsection{Find hyper-parameter setting}
+
+\begin{table}
+  \caption{Hyper-parameter results for 10 iteration}
+  \label{tab:freq}
+  \begin{tabular}{ccccccc|cl}
+    \toprule
+    ITER & POP & WINNER & OFFSPRING & MATING\_POOL & TOURNAMENT & LEARNING\_RATE & max fitness & avg fitness\\
+    \midrule
+    10 & 100 & 10 & 100 & 30 & 7 & 0.1 & ? & ?\\
+    $\pi$ & 1 in 5& Common in math\\
+    \$ & 4 in 5 & Used in business\\
+    $\Psi^2_1$ & 1 in 40,000& Unexplained usage\\
+  \bottomrule
+\end{tabular}
+\end{table}
+
+\subsection{Determine the range for Pig and TNT count}
+
+\subsection{Custom Fitness}
+
+\section{Comparison}
+aa
+
+\section{Discussion}
+cc
+
+
+\section{Limitation}
+
+\subsection{Training our own VAE}
+
+Initially, we decide to re-implement the VAE in TensorFlow, which is a more widely-used deep learning package than Chainer, the package the source code uses, by reading the paper and codes. We started doing that around mid-February. We successfully built a model that can generate levels. However, after spending around one month, we still cannot figure out the over-fitting issue presented in our model. Since we have limited time and the focus of this project is on EA, we had to proceed so we trained a VAE from their codes.
+
+\subsection{Alternative choices on fitness}
+
+We planned to evaluate the \textbf{fitness by adopting AI agent} that can play Angry Birds. The idea is after generating a level, we let 3 AI agents to play it. Then, we count the remaining birds for each agent, after completing the level and use that as a choice of fitness. However, we found that it takes around 6 seconds the agents to play each level (they are running in parallel), which is very expensive. In addition, this metric only focus on the difficulty of level and difficulty actually is not the only concern in game levels. Therefore, we discarded this choice.
+
+\textbf{Novelty search} seems to be a good choice for this problem, since an objective fitness function is lacking.Novelty search techniques require a measure of behavioral difference and replace fitness by the behavioral differences, comparing to other individuals in the population. However, in our problem setting, there does not seem to have a reasonable choice for behavioral differences. The phenotype are game levels. When players say two levels are similar, it is referring two levels are similar visually. To compare the similarity of two pictures, we may need to train convolutional neural networks and fine-tune it for this specific task. Consequently, the fitness computation becomes more expensive.
+
+\section{Conclusion}
+
+dd
+
+
+  Some examples.  A paginated journal article \cite{Abril07}, an
+  enumerated journal article \cite{Cohen07}, a reference to an entire
+  issue \cite{JCohen96}, a monograph (whole book) \cite{Kosiur01}, a
+  monograph/whole book in a series (see 2a in spec. document)
+  \cite{Harel79}, a divisible-book such as an anthology or compilation
+  \cite{Editor00} followed by the same example, however we only output
+  the series if the volume number is given \cite{Editor00a} (so
+  Editor00a's series should NOT be present since it has no vol. no.),
+  a chapter in a divisible book \cite{Spector90}, a chapter in a
+  divisible book in a series \cite{Douglass98}, a multi-volume work as
+  book \cite{Knuth97}, a couple of articles in a proceedings (of a
+  conference, symposium, workshop for example) (paginated proceedings
+  article) \cite{Andler79, Hagerup1993}, a proceedings article with
+  all possible elements \cite{Smith10}, an example of an enumerated
+  proceedings article \cite{VanGundy07}, an informally published work
+  \cite{Harel78}, a couple of preprints \cite{Bornmann2019,
+    AnzarootPBM14}, a doctoral dissertation \cite{Clarkson85}, a
+  master's thesis: \cite{anisi03}, an online document / world wide web
+  resource \cite{Thornburg01, Ablamowicz07, Poker06}, a video game
+  (Case 1) \cite{Obama08} and (Case 2) \cite{Novak03} and \cite{Lee05}
+  and (Case 3) a patent \cite{JoeScientist001}, work accepted for
+  publication \cite{rous08}, 'YYYYb'-test for prolific author
+  \cite{SaeediMEJ10} and \cite{SaeediJETC10}. Other cites might
+  contain 'duplicate' DOI and URLs (some SIAM articles)
+  \cite{Kirschmer:2010:AEI:1958016.1958018}. Boris / Barbara Beeton:
+  multi-volume works as books \cite{MR781536} and \cite{MR781537}. A
+  couple of citations with DOIs:
+  \cite{2004:ITE:1009386.1010128,Kirschmer:2010:AEI:1958016.1958018}. Online
+  citations: \cite{TUGInstmem, Thornburg01, CTANacmart}.
+  Artifacts: \cite{R} and \cite{UMassCitations}.
+
+%%
+%% The next two lines define the bibliography style to be used, and
+%% the bibliography file.
+\bibliographystyle{ACM-Reference-Format}
+\bibliography{sample-base}
+
+
+\end{document}
+\endinput
+%%
+%% End of file `sample-manuscript.tex'.
